@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AlphaBlog</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <header>
+    <h1>WELCOME</h1>
+    <%=link_to image_tag 'devops.jpg'%>
+  </header>
+  <nav>
+    <ul>
+      <li><%=link_to 'Home', root_path%></li>
+      <li><%=link_to 'About', about_path%></li>
+      <li><%=link_to 'Home', root_path%></li>
+    </ul>
+  </nav>
+  <div>
+<span class='left'>
+<article>
+  <h1><%= yield %></h1>
+</article>
+</span>
+    <span class='right'>
+<article>
+  <h1>Lorem Ipsum</h1>
+</article>
+</span>
+  </div>
+  <footer></footer>
+  Copyright 2017
+  </div>
+  </body>
+</html>

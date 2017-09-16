@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TestApp</title>
+  <%= csrf_meta_tags %>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+<header>WELCOME</header>
+<nav>
+  <ul>
+    <li><%=link_to 'Home', welcome_home_path%></li>
+    <li><%=link_to 'About', welcome_about_path%></li>
+    <li><%=link_to 'Home', welcome_home_path%></li>
+  </ul>
+</nav>
+<div>
+<span class='left'>
+<article>
+  <h1>Lorem Ipsum</h1>
+</article>
+</span>
+  <span class='right'>
+<article>
+  <h1>Lorem Ipsum</h1>
+</article>
+</span>
+</div>
+<footer></footer>
+Copyright 2017
+</div>
+<body>
+<%= yield %>
+</body>
+</html>
